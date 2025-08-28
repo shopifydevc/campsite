@@ -34,7 +34,7 @@ export const RAILS_AUTH_URL = IS_PRODUCTION
   Not using an env variable because we use this variable in the browser, which
   requires extra config with Next.js to send env variables to the browser.
 */
-export const IMGIX_DOMAIN = IS_PRODUCTION ? 'https://campsite.imgix.net' : 'https://campsite-dev.imgix.net'
+export const IMGIX_DOMAIN = IS_PRODUCTION ? 'https://truecamp.imgix.net' : 'https://campsite-dev.imgix.net'
 
 export const FIGMA_PLUGIN_URL = 'https://www.figma.com/community/plugin/1108886817260186751'
 export const ZAPIER_APP_URL = 'https://zapier.com/apps/campsite/integrations'
