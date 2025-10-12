@@ -4,7 +4,7 @@ image: truemarkdev/campsite
 
 servers:
   web:
-    - 35.154.218.222
+    - 51.91.240.88
 
 proxy:
   ssl: false
@@ -24,11 +24,11 @@ env:
 
 builder:
   arch: amd64
-  remote: ssh://admin@35.154.218.222
+  remote: ssh://deploy@51.91.240.88
   context: .
   dockerfile: apps/sync-server/Dockerfile
   args:
     SENTRY_AUTH_TOKEN: eaaopdummy
 
 ssh:
-  user: admin
+  user: deploy
