@@ -21,6 +21,7 @@ registry:
 env:
   secret:
     - API_BASE_URL
+    - SENTRY_DSN
 
 builder:
   arch: amd64
