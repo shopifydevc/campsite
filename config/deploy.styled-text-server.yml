@@ -9,6 +9,7 @@ servers:
 env:
   secret:
     - AUTHTOKEN
+    - SENTRY_DSN
 
 proxy:
   ssl: true
@@ -27,8 +28,10 @@ builder:
   remote: ssh://deploy@51.91.240.88
   context: .
   dockerfile: apps/styled-text-server/Dockerfile
-  args:
-    SENTRY_AUTH_TOKEN: eaaopdummy
+  secrets:
+    - SENTRY_AUTH_TOKEN
+    - SENTRY_ORG
+    - SENTRY_PROJECT
 
 ssh:
   user: deploy
