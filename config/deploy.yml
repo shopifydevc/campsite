@@ -1,7 +1,7 @@
 
 service: campsite-sync-server
 
-image: julii776/campsite
+image: truemarkdev/campsite
 
 servers:
   web:
