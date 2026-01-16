@@ -10,11 +10,10 @@ import AuthAppProviders from '@/components/Providers/AuthAppProviders'
 import { PWAUpsell } from '@/components/PWAUpsell'
 import { ThemePicker } from '@/components/ThemePicker'
 import { Behaviors } from '@/components/UserSettings/Behaviors'
-import { CalDotComIntegration } from '@/components/UserSettings/CalDotComIntegration'
 import { FigmaIntegration } from '@/components/UserSettings/FigmaIntegration'
 import { NotificationSettings } from '@/components/UserSettings/Notifications/NotificationSettings'
-import { PushNotificationSettings } from '@/components/UserSettings/Notifications/PushNotificationSettings'
 import { NotificationSchedule } from '@/components/UserSettings/NotificationSchedule'
+import { PushNotificationSettings } from '@/components/UserSettings/Notifications/PushNotificationSettings'
 import { UserSettingsPageWrapper } from '@/components/UserSettings/PageWrapper'
 import { PersonalCallLinks } from '@/components/UserSettings/PersonalCallLinks'
 import { SlackNotificationSettings } from '@/components/UserSettings/SlackNotificationSettings'
@@ -48,7 +47,7 @@ const UserSettingsPage: PageWithProviders<any> = () => {
         <DesktopAppUpsell />
         <PWAUpsell />
         <FigmaIntegration />
-        <CalDotComIntegration />
+        {/* <CalDotComIntegration /> */}
         <PersonalCallLinks />
         <ThemePicker />
         <Behaviors />

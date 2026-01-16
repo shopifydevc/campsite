@@ -36,12 +36,13 @@ export const RAILS_AUTH_URL = IS_PRODUCTION
 */
 export const IMGIX_DOMAIN = IS_PRODUCTION ? 'https://truecamp.imgix.net' : 'https://campsite-dev.imgix.net'
 
-export const FIGMA_PLUGIN_URL = 'https://www.figma.com/community/plugin/1108886817260186751'
+export const FIGMA_PLUGIN_URL = process.env.NEXT_PUBLIC_FIGMA_PLUGIN_URL
 export const ZAPIER_APP_URL = 'https://zapier.com/apps/campsite/integrations'
 export const CAL_DOT_COM_APP_URL = 'https://app.cal.com/apps/campsite'
 
 export const LINEAR_CALLBACK_URL = `${RAILS_API_URL}/v1/integrations/linear/callback`
 export const LINEAR_CLIENT_ID = process.env.NEXT_PUBLIC_LINEAR_CLIENT_ID!
+export const LINEAR_APP_URL = process.env.NEXT_PUBLIC_LINEAR_APP_URL
 
 export const ONBOARDING_STEP_KEY = 'onboardingStep'
 export const ONBOARDING_SHARED_POSTS_KEY = 'onboardingPostIds'
